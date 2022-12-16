@@ -22,22 +22,23 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo-news.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Rookie News</h3>
 
   <p align="center">
-    project_description
+    Analyze the news contents with the help of Bing News Search API, Knowledge Graphs, Deceptive Pattern Recognition and
+    all the possible NLP tools.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ajakupov/NewsExplorer"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/ajakupov/NewsExplorer">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/ajakupov/NewsExplorer/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/ajakupov/NewsExplorer/issues">Request Feature</a>
   </p>
 </div>
 
@@ -76,7 +77,11 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Analyze the news with the help of [Bing News Search API](https://learn.microsoft.com/en-us/azure/cognitive-services/bing-news-search/search-the-web?WT.mc_id=AI-MVP-5003429).
+The Bing News Search API is a RESTful web service, making it easy to call from any programming language that can make HTTP requests and parse JSON. 
+You can use the service using either the REST API, or the SDK.
+We create a wrapper service to bring some additional functionalities, like Stylometric Analysis, Sentiment Exploration, Deceptive Opinion spam detection etc.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,14 +89,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][Python-logo]][Python-url]
+* [![Django][Django-logo]][Django-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,25 +106,22 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* python
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get an API Key for [Bing News Search](https://learn.microsoft.com/en-us/azure/cognitive-services/bing-news-search/search-the-web?WT.mc_id=AI-MVP-5003429)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/ajakupov/NewsExplorer.git
    ```
-3. Install NPM packages
+3. Install python packages
    ```sh
-   npm install
+   pip install -r requirements.txt
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Enter your API in environmental variables
+   ```sh
+   export SUBSCRIPTION_KEY=YOUR-API-KEY
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -134,9 +131,13 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+One of the possible applications of the News Project, is the Deceptive Opinion Spam analysis. 
+Deceptive Opinion Spam commonly takes the form of fake reviews (negative or positive) posted by a malicious web user to hurt or inflate a company's image. 
+As these reviews have been deliberately written to deceive the reader, human reviewers are faring little better than a chance in detecting these deceptive statements. 
+Thus, there is a dire need to address this issue as extracting text patterns from the fraudulent texts with meaningful substructures still remains a challenge
+We can construct a model to learn the patterns that constitute a fake review, and then explore the outputs of this model to identify those patterns
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [website](https://www.alirookie.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,12 +146,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Knowledge Graph Integration
+- [ ] Stylometric Analysis
+- [ ] Sentiment Analysis
+    - [ ] Exaggeration Evaluation
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/ajakupov/NewsExplorer/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,9 +187,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Alibek Jakupov - [@twitter_handle](https://twitter.com/ajakupov1) - ajakupov.expertime@outlook.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [News Explorer](https://github.com/ajakupov/NewsExplorer)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,18 +208,18 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/ajakupov/NewsExplorer.svg?style=for-the-badge
+[contributors-url]: https://github.com/ajakupov/NewsExplorer/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ajakupov/NewsExplorer.svg?style=for-the-badge
+[forks-url]: https://github.com/ajakupov/NewsExplorer/network/members
+[stars-shield]: https://img.shields.io/github/stars/ajakupov/NewsExplorer.svg?style=for-the-badge
+[stars-url]: https://github.com/ajakupov/NewsExplorer/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ajakupov/NewsExplorer.svg?style=for-the-badge
+[issues-url]: https://github.com/ajakupov/NewsExplorer/issues
+[license-shield]: https://img.shields.io/github/license/ajakupov/NewsExplorer.svg?style=for-the-badge
+[license-url]: https://github.com/ajakupov/NewsExplorer/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://www.linkedin.com/in/alibek-jakupov-30305b61/
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
@@ -236,3 +237,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Python-logo]: https://img.shields.io/badge/python-0769AD?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://www.python.org
+[Django-logo]: https://img.shields.io/badge/django-35495E?style=for-the-badge&logo=django&logoColor=4FC08D
+[Django-url]: https://www.djangoproject.com
