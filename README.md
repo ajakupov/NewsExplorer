@@ -198,7 +198,7 @@ Project Link: [News Explorer](https://github.com/ajakupov/NewsExplorer)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [The Rookie Developer Blog(https://www.alirookie.com/)
+* [The Rookie Developer Blog]Ò(https://www.alirookie.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
