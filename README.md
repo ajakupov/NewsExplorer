@@ -217,7 +217,7 @@ Project Link: [News Explorer](https://github.com/ajakupov/NewsExplorer)
 [issues-shield]: https://img.shields.io/github/issues/ajakupov/NewsExplorer.svg?style=for-the-badge
 [issues-url]: https://github.com/ajakupov/NewsExplorer/issues
 [license-shield]: https://img.shields.io/github/license/ajakupov/NewsExplorer.svg?style=for-the-badge
-[license-url]: https://github.com/ajakupov/NewsExplorer/blob/master/LICENSE.txt
+[license-url]: https://github.com/ajakupov/NewsExplorer/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/alibek-jakupov-30305b61/
 [product-screenshot]: images/screenshot.png
